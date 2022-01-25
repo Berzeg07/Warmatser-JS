@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS Practice</title>
+</head>
+
+<body class="content">
+    <div class="box-shadow"></div>
+    <div class="map-container">
+        <div class="map-container_inner" id="cont">
+            <div class="mage">
+                <div class="tooltip runolv" id="runolv">Рунольв</div>
+            </div>
+            <div class="georg-farm">
+                <div class="tooltip georg" id="georg">Двор Георга</div>
+            </div>
+            <div class="horinis">
+                <div class="horinis-inner">
+                    <div class="block-loc hide-loc" id="horinis_loc">
+                        <div class="tooltip andreas" id="andreas">Андреас</div>
+                        <div class="tooltip tavern" id="tavern">Таверна</div>
+                        <div class="tooltip house hide-loc" id="house">Дом</div>
+                        <div class="tooltip garold" id="garold">Гарольд</div>
+                        <div class="tooltip shop" id="shop">Лавка</div>
+                        <div class="tooltip bernard hide-loc" id="bernard">Бернард</div>
+                    </div>
+                    <div class="tooltip guard" id="guard">Стража</div>
+                </div>
+            </div>
+            <div class="farm">
+                <div class="farm-inner">
+                    <div class="tooltip gerhard hide-loc" id="gerhard">Герхард</div>
+
+                    <div class="tooltip fridrick hide-loc" id="fridrick">Фридрик</div>
+
+                    <div class="tooltip job hide-loc" id="job">Ферма</div>
+                </div>
+            </div>
+            <div class="forest">
+                <div class="forest-inner">
+                    <div class="tooltip rat forest-battle" id="rat">Болотные крысы</div>
+                    <div class="tooltip varg forest-battle" id="varg">Варги</div>
+                    <div class="tooltip vasilisk forest-battle" id="vasilisk">Василиск</div>
+                </div>
+            </div>
+            <div class="foggy-hollow">
+                <div class="tooltip hollow" id="hollow">Туманная лощина</div>
+            </div>
+        </div> <!-- map-container_inner -->
+        <div class="overlay" id="overlay"></div>
+    </div><!-- map-container -->
+    <script src="../dist/bundle.js"></script>
+</body>
+
+</html>

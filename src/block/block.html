@@ -1,0 +1,212 @@
+<!-- Товары магазина -->
+<div class="modal-item">
+    <p class="modal-title">Товары</p>
+    <ul id="shop_list">
+        <li>
+            <label> <input type="radio" value="Кожаная броня" name="shop_item"> Кожаная броня - <span>200 </span>(Броня:<em>5</em>)
+            </label>
+        </li>
+    </ul>
+    <div class="btn-block btn-block_seller"><button class="btn buy_btn">Купить</button></div>
+</div>
+<!-- Предметы игрока -->
+<div class="modal-item">
+    <p class="modal-title">Инвентарь</p>
+    <ul id="inventory">
+        <li>
+            <label> <input type="radio" value="Меч Беллиара" name="hero_item"> Меч Беллиара - <span>1000 </span>(Урон:<em>30</em>) - <i>2</i> шт.
+            </label>
+        </li>
+    </ul>
+    <div class="btn-block btn-block_buyer"><button class="btn sell_btn">Продать</button></div>
+</div>
+<!-- Кошелек игрока -->
+<div class="modal-item">
+    <p class="modal-title">Кошелек</p>
+    <ul id="purse">
+        <li>
+            <p>Золото: <span>15000</span></p>
+        </li>
+    </ul>
+</div>
+
+<!-- ======================================================================= -->
+<!-- Модальное окно -->
+<div class="modal modal-show modal-loc forest-loc">
+    <div class="modal-inner">
+        <!-- Крестик -->
+        <div class="modal-close modal-close_btn"></div>
+
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- Битва -->
+<div class="battle-block">
+    <!-- Вывод результата -->
+    <div class="overlay-battle">
+        <div class="battle-result">
+            <p id="battle_mess">Ты победил!</p>
+            <div class="btn-block" id="btn_block"><button class="btn modal-close_btn">Уйти</button></div>
+        </div>
+    </div>
+
+    <div class="modal-inner_item">
+        <div class="modal-hero">
+            <div class="modal-hero_inner">
+                <img src="img/hero.png" alt="герой">
+            </div>
+        </div>
+        <div class="modal-enemy varg-battle"><img src="img/varg.png" alt="Варг"></div>
+        <div class="battle-options">
+            <div class="battle-options_inner battle-options_action"><button class="btn atack">Атаковать</button><button class="btn modal-close_btn">Отступить</button></div>
+            <div class="battle-options_flex">
+                <div class="battle-options_inner">
+                    <ul class="battle-list">
+                        <li>
+                            <p class="battle-list_title">Герой</p>
+                        </li>
+                        <li>
+                            <b>Урон:</b>
+                            <span>10</span>
+                        </li>
+                        <li>
+                            <b>Броня:</b>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <b>Крит:</b>
+                            <span>20%</span>
+                        </li>
+                        <li>
+                            <b>Здоровье:</b>
+                            <span id="battleHP">100</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="battle-options_inner">
+                    <ul class="battle-list">
+                        <li>
+                            <p class="battle-list_title">Варг</p>
+                        </li>
+                        <li>
+                            <b>Урон:</b>
+                            <span>???</span>
+                        </li>
+                        <li>
+                            <b>Броня:</b>
+                            <span>???</span>
+                        </li>
+                        <li>
+                            <b>Крит:</b>
+                            <span>???</span>
+                        </li>
+                        <li>
+                            <b>Здоровье:</b>
+                            <span>???</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- Диалоговый блок -->
+<div class="dialogue">
+    <p class="dialogue_article"><b>Сантино:</b> Продаю по полной цене, выкупаю за половину :)</p>
+    <div class="btn-block btn-block_dialogue"><button class="btn show_product">Товары</button><button class="btn modal-close_btn">Уйти</button></div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- Вступительное окно -->
+<div class="modal modal-show journal">
+    <p class="journal-title">Начало</p>
+    <div class="begin-img"><img src="img/bg-main.jpg"></div>
+    <div class="start-article">
+        <p>В голове мрак и сумятица, ты потерял память. Единственное, что ты помнишь это горный перевал и неожиданный камнепад, дальше только тьма. Ты очнулся в кровати, кто то тебя вытащил из злополучного перевала, можно встать и осмотреться...</p>
+        <button class="btn start-game">Далее</button>
+    </div>
+</div>
+<!-- ======================================================================= -->
+<!-- Инвентарь -->
+<div class="modal modal-show inv-block">
+    <p class="modal-title">Инвентарь
+    </p>
+    <div class="modal-close modal-close_btn"></div>
+    <p></p>
+    <ul id="inventory">
+        <li>
+            <label> <input type="radio" value="Меч Беллиара" name="hero_item"> Меч Беллиара - <span>1000 </span>(Урон:<em>30</em>) - <i>2</i> шт.
+            </label>
+        </li>
+        <li>
+            <label> <input type="radio" value="Панцирь Дракона" name="hero_item"> Панцирь Дракона - <span>1000 </span>(Броня:<em>15</em>) - <i>2</i> шт.
+            </label>
+        </li>
+    </ul>
+    <div class="btn-block btn-block_inv"><button class="btn equipBtn">Экипировать</button><button class="btn modal-close_btn">Закрыть</button></div>
+</div>
+<!-- ======================================================================= -->
+<!-- Журнал -->
+<div class="modal modal-show journal">
+    <p class="journal-title">Журнал</p>
+    <div class="modal-close modal-close_btn"></div>
+    <div class="journal-item" id="journal-item">
+        <div class="quest-box">
+            <p class="quest-title">Начало</p>
+            <ul class="journal-list">
+                <li>- Добрый маг привел меня в чувство и дал не много денег. Нужно осмотреться в городе, чем ни будь заняться, пока не вернется память</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ======================================================================= -->
+<div class="hero-infobar">
+    <div class="hero-infobar_btn"><button class="btn panel-journal_btn">Журнал</button><button class="btn panel-inv_btn">Инвентарь</button></div>
+    <ul class="hero-skill">
+        <li>
+            <span>Урон:</span>
+            <span>10</span>
+        </li>
+        <li>
+            <span>Броня:</span>
+            <span>0</span>
+        </li>
+        <li>
+            <span>Крит:</span>
+            <span>20%</span>
+        </li>
+        <li>
+            <span>Здоровье:</span>
+            <span>100</span>
+        </li>
+        <li>
+            <span>Золото:</span>
+            <span id="hero_gold">15000</span>
+        </li>
+    </ul>
+    <ul class="hero-equip">
+        <li>
+            <span>Оружие:</span>
+            <span id="weaponEquip">Пусто</span>
+        </li>
+        <li>
+            <span>Доспех:</span>
+            <span id="armorEquip">Пусто</span>
+        </li>
+    </ul>
+</div><!-- hero-infobar -->
+<!-- ======================================================================= -->
+<div class="hero">
+    <div class="hero-item">
+        <span class="hero-name">Герой</span>
+        <div class="hero-img">
+            <img src="img/hero.png" alt="герой">
+        </div>
+        <div class="hero-armor" id="heroArmor"></div>
+        <div class="hero-weapon" id="heroWeapon"></div>
+    </div>
+</div><!-- hero -->
+<!-- ======================================================================= -->

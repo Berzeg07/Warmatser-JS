@@ -1,0 +1,1311 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h2,
+h3,
+h3,
+h4,
+h4,
+h5,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a,
+input,
+textarea {
+    outline: none;
+}
+
+.link-list li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link-list li:hover {
+    color: brown;
+}
+
+.link-d {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link-d:hover {
+    color: brown;
+}
+
+.content {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    background: url("../img/bg-main.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.map-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.map-container_inner {
+    width: 900px;
+    height: 600px;
+    background: url("../img/map.png") no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+
+.hero-item {
+    width: 240px;
+    background: url("../img/hero-bg.jpg") no-repeat center;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    background-size: cover;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.hero-name {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px 25px;
+    color: orange;
+}
+
+.hero-img {
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -20px;
+    z-index: 1;
+}
+
+.hero-infobar {
+    width: 1140px;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+}
+
+.hero-infobar ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.hero-infobar ul li {
+    position: relative;
+    padding-right: 7px;
+    margin-right: 7px;
+}
+
+.hero-infobar ul li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background: white;
+}
+
+.hero-infobar ul li span {
+    color: white;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.hero-infobar ul li span:first-child {
+    color: orange;
+}
+
+.btn {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid orange;
+    cursor: pointer;
+    padding: 4px 12px;
+    margin-right: 4px;
+    transition: 0.5s;
+    color: black;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.tooltip {
+    padding: 5px 7px;
+    background: white;
+    border: 2px solid orange;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.5s;
+    line-height: 16px;
+}
+
+.tooltip:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.mage {
+    position: absolute;
+    right: 280px;
+    top: 66px;
+    width: 100px;
+}
+
+.horinis {
+    position: absolute;
+    left: 193px;
+    bottom: 220px;
+    width: 188px;
+    height: 150px;
+}
+
+.horinis-inner {
+    position: relative;
+}
+
+.andreas {
+    top: 63px;
+}
+
+.tavern {
+    left: 2px;
+    top: 107px;
+}
+
+.house {
+    right: 21px;
+    top: 80px;
+}
+
+.garold {
+    left: 65px;
+    top: 36px;
+}
+
+.shop {
+    left: 70px;
+    top: 72px;
+}
+
+.bernard {
+    right: 42px;
+    top: 112px;
+}
+
+.gerhard {
+    right: 91px;
+    top: 30px;
+}
+
+.forest {
+    position: absolute;
+    width: 340px;
+    height: 180px;
+    left: 126px;
+    top: 90px;
+}
+
+.forest-inner {
+    position: relative;
+}
+
+.rat {
+    left: 120px;
+    top: 130px;
+}
+
+.varg {
+    right: 35px;
+    top: 102px;
+}
+
+.varg-battle {
+    right: 5px;
+    bottom: 37px;
+    width: 425px;
+}
+
+.vasilisk {
+    left: 160px;
+    top: 70px;
+}
+
+.foggy-hollow {
+    position: absolute;
+    left: 440px;
+    bottom: 110px;
+}
+
+.farm {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    right: 151px;
+    bottom: 128px;
+}
+
+.farm-inner {
+    position: relative;
+}
+
+.guard {
+    top: 160px;
+    left: 24px;
+}
+
+.georg-farm {
+    position: absolute;
+    width: 200px;
+    left: 270px;
+    bottom: 150px;
+}
+
+.fridrick {
+    left: 116px;
+    top: -100px;
+}
+
+.job {
+    left: 140px;
+    top: 60px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: none;
+}
+
+.journal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+    width: 700px;
+    padding: 10px 15px;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    border-radius: 10px;
+    background: rgba(242, 213, 170, 0.8);
+    display: none;
+}
+
+.journal-item {
+    margin-bottom: 15px;
+}
+
+.journal-title {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: brown;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.hero-armor,
+.hero-weapon {
+    position: absolute;
+}
+
+.hero-armor {
+    z-index: 3;
+}
+
+.hero-weapon {
+    z-index: 4;
+}
+
+.leather-armor {
+    width: 175px;
+    height: 300px;
+    background: url("../img/light-armor.png") no-repeat center;
+    background-size: contain;
+    top: 89px;
+    left: 32px;
+}
+
+.leather-armor_battle {
+    width: 227px;
+    height: 366px;
+    top: -2px;
+    left: -11px;
+}
+
+.heavy-armor {
+    width: 170px;
+    height: 369px;
+    background: url("../img/heavy-armor.png") no-repeat center;
+    background-size: contain;
+    top: 26px;
+    left: 36px;
+}
+
+.heavy-armor_battle {
+    width: 230px;
+    height: 326px;
+    top: -15px;
+    left: -10px;
+}
+
+.dragon-armor {
+    width: 163px;
+    height: 405px;
+    background: url("../img/dragon-armor.png") no-repeat center;
+    background-size: contain;
+    top: 78px;
+    left: 34px;
+}
+
+.dragon-armor_battle {
+    width: 219px;
+    height: 500px;
+    top: -7px;
+    left: -12px;
+}
+
+.club {
+    width: 65px;
+    height: 127px;
+    background: url("../img/club.png") no-repeat center;
+    background-size: contain;
+    top: 257px;
+    left: 111px;
+}
+
+.club_battle {
+    width: 122px;
+    height: 159px;
+    top: 216px;
+    left: 78px;
+}
+
+.sword {
+    width: 86px;
+    height: 180px;
+    background: url("../img/sword.png") no-repeat center;
+    background-size: contain;
+    top: 242px;
+    left: 104px;
+}
+
+.sword_battle {
+    width: 115px;
+    height: 244px;
+    top: 185px;
+    left: 83px;
+}
+
+.axe {
+    width: 250px;
+    height: 280px;
+    background: url("../img/battle-axe.png") no-repeat center;
+    background-size: contain;
+    top: 94px;
+    left: 3px;
+    z-index: 0;
+}
+
+.axe_battle {
+    width: 300px;
+    height: 320px;
+    top: 8px;
+    left: -19px;
+}
+
+.destroyer {
+    width: 193px;
+    height: 251px;
+    background: url("../img/destroyer.png") no-repeat center;
+    background-size: contain;
+    top: 120px;
+    left: 30px;
+    z-index: 0;
+}
+
+.destroyer_battle {
+    width: 256px;
+    height: 300px;
+    top: 46px;
+    left: -16px;
+}
+
+.quest-title {
+    font-weight: 600;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.quest-box {
+    margin-bottom: 17px;
+}
+
+.modal-enemy {
+    position: absolute;
+    z-index: 0;
+}
+
+.battle-list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.battle-list li {
+    position: relative;
+}
+
+.battle-list li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 3px;
+    width: 1px;
+    height: 16px;
+    background: white;
+}
+
+.battle-list li:first-child:after {
+    top: 4px;
+}
+
+.battle-block {
+    height: 100%;
+}
+
+.vasilisk-battle {
+    width: 520px;
+    right: 5px;
+    bottom: -7px;
+}
+
+.rat-battle {
+    width: 333px;
+    right: 11px;
+    bottom: 44px;
+}
+
+.orc-battle,
+.gerhard-battle {
+    width: 420px;
+    right: 30px;
+    bottom: 20px;
+}
+
+.gerhard-battle {
+    width: 255px;
+}
+
+.derek-battle,
+.killer-battle {
+    width: 238px;
+    right: 45px;
+}
+
+.killer-battle {
+    width: 290px;
+}
+
+.modal-loc {
+    width: 900px;
+    height: 600px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    border-radius: 10px;
+    z-index: 20;
+    display: none;
+    overflow: hidden;
+}
+
+.modal-loc-inner {
+    position: relative;
+    height: 100%;
+}
+
+.modal-loc-article {
+    position: absolute;
+    bottom: 18px;
+    font-size: 18px;
+    width: 80%;
+    padding: 10px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    border-radius: 10px;
+    background: rgba(242, 213, 170, 0.9);
+}
+
+.modal-loc-article p {
+    font-weight: 400;
+}
+
+.modal-loc-article p b {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.modal-loc-article .btn-block {
+    border-top: 1px solid black;
+}
+
+.overlay-battle {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    display: none;
+}
+
+.overlay-battle_show {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    animation: fade 0.5s forwards ease-in-out;
+}
+
+.battle-options {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 25;
+    text-align: center;
+}
+
+.battle-options_flex {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.battle-options_flex .battle-options_inner {
+    width: 46%;
+}
+
+.battle-options_inner {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+}
+
+.battle-options_inner .btn {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.battle-options_inner,
+.inv-block,
+.modal-item {
+    font-size: 18px;
+    color: white;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.battle-options_inner span,
+.inv-block span,
+.modal-item span {
+    color: orange;
+}
+
+.battle-options_inner em,
+.inv-block em,
+.modal-item em {
+    color: palegoldenrod;
+    padding-left: 5px;
+}
+
+.battle-options_inner i,
+.inv-block i,
+.modal-item i {
+    color: yellowgreen;
+}
+
+.battle-options_inner {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.battle-options_action {
+    display: inline-block;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+.modal-item_battle {
+    top: -60px;
+}
+
+.inv-block {
+    position: absolute;
+    bottom: 26px;
+    left: 65px;
+    display: none;
+    min-width: 200px;
+}
+
+.inv-block .modal-title {
+    position: relative;
+}
+
+.start-article {
+    padding-top: 15px;
+}
+
+.start-article p {
+    padding-bottom: 15px;
+}
+
+.dialogue {
+    position: absolute;
+    bottom: 18px;
+    font-size: 18px;
+    width: 80%;
+    padding: 10px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    border-radius: 10px;
+    background: rgba(238, 210, 161, 0.9);
+}
+
+.dialogue b {
+    color: brown;
+    font-size: 20px;
+}
+
+.battle-result {
+    font-size: 18px;
+    padding: 5px 12px;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 5px 0 white;
+    -moz-box-shadow: 0 0 5px 0 white;
+    box-shadow: 0 0 5px 0 white;
+    border-radius: 10px;
+    background: rgba(238, 210, 161, 0.9);
+    text-align: center;
+}
+
+.battle-result .btn-block {
+    justify-content: center;
+}
+
+.battle-result p {
+    font-size: 18px;
+}
+
+.battle-result b {
+    font-weight: 600;
+    color: brown;
+    font-size: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    line-height: 19px;
+    width: 25px;
+    height: 24px;
+    padding: 3px;
+    border: 2px solid orange;
+    border-radius: 10em;
+    background: white url("../img/close.png") no-repeat top 4px center;
+    transition: 0.5s;
+    color: black;
+    cursor: pointer;
+    z-index: 35;
+}
+
+.modal-close:hover {
+    background: black url("../img/close-white.png") no-repeat top 4px center;
+}
+
+.inv-block_close {
+    right: -26px;
+    top: -19px;
+}
+
+.load {
+    width: 80px;
+    height: 80px;
+    border-radius: 10em;
+    background: white;
+    overflow: hidden;
+    padding: 12px 10px 5px;
+    border: 2px solid #C7A55D;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.load.hide {
+    opacity: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    /*50% {
+        transform: rotate(360deg);
+    }*/
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.load img {
+    width: 25px;
+    animation: rotate  2s infinite ease-in-out;
+}
+
+.modal.shop-loc {
+    background: url("../img/shop-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.mage-loc {
+    background: url("../img/mage-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.mage-loc_empty {
+    background: url("../img/mage_house-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.fridrick-loc {
+    background: url("../img/fridrick-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.bernard-loc {
+    background: url("../img/bernard-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.georg-loc {
+    background: url("../img/georg-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.guard-loc {
+    background: url("../img/guard-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.hollow-loc {
+    background: url("../img/hollow-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.forest-loc {
+    background: url("../img/forest-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.andreas-loc {
+    background: url("../img/andreas-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.garold-loc {
+    background: url("../img/garold-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.hero-die {
+    background: url("../img/hero-die.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.final-loc {
+    background: url("../img/final-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.hollow-hut {
+    background: url("../img/hollow-house.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.kill-runolv {
+    background: url("../img/kill-runolv.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.killer-loc {
+    background: url("../img/killer-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.djerard-die-loc {
+    background: url("../img/kill-djerard.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.house_inner-loc {
+    background: url("../img/house_inner-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.house-loc {
+    background: url("../img/house-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.tavern-loc {
+    background: url("../img/tavern-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.job-loc {
+    background: url("../img/farm-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.fridrick_farm-loc {
+    background: url("../img/fridrick_farm-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.cave-loc {
+    background: url("../img/cave-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.train-loc {
+    background: url("../img/train-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal.gerhard-loc {
+    background: url("../img/gerhard-loc.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.modal-inner {
+    height: 100%;
+}
+
+.modal-inner_item {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 25;
+}
+
+.d-flex {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.modal-battle_inner {
+    height: 86%;
+}
+
+.modal-hero {
+    width: 204px;
+    position: absolute;
+    left: 58px;
+    top: 40px;
+}
+
+.modal-hero_inner img {
+    position: relative;
+    z-index: 1;
+}
+
+.battle-list_title {
+    font-size: 20px;
+    color: burlywood;
+}
+
+.tooltip-inner {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    padding: 5px 7px;
+    color: black;
+    font-size: 16px;
+    background: #F4C56F;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.tooltip-inner p {
+    position: relative;
+}
+
+.tooltip-inner p:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -19px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #F4C56F;
+    border-right: 14px solid transparent;
+}
+
+.btn-block {
+    border-top: 1px solid white;
+    padding: 10px 0 5px;
+    margin-top: 10px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    position: relative;
+}
+
+.btn-block button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.modal-title {
+    border-bottom: 1px solid white;
+    padding: 5px 0 10px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.modal-show {
+    display: block;
+    animation: fade 0.5s forwards ease-in-out;
+}
+
+.modal-show_inner {
+    display: flex;
+    animation: fade 0.5s forwards ease-in-out;
+}
+
+.hide-item {
+    display: none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hide-loc {
+    display: none;
+}
+
+/* media full hd*/
+@media(min-width:1900px) {
+    .map-container {
+        width: 1600px;
+    }
+
+    .map-container_inner {
+        width: 1280px;
+        height: 800px;
+    }
+
+    .hero {
+        position: absolute;
+        right: 120px;
+        top: -50px;
+    }
+
+    .hero-infobar {
+        width: 1200px;
+    }
+
+    .forest {
+        left: 264px;
+        top: 167px;
+    }
+
+    .horinis {
+        left: 322px;
+        bottom: 300px;
+    }
+
+    .georg-farm {
+        left: 384px;
+        bottom: 195px;
+    }
+
+    .foggy-hollow {
+        left: 600px;
+        bottom: 142px;
+    }
+
+    .mage {
+        right: 450px;
+        top: 97px;
+    }
+
+    .farm {
+        right: 256px;
+        bottom: 193px;
+    }
+
+    .fridrick {
+        top: -134px;
+    }
+}
+
+@media(max-width: 1599px) {
+    .begin-img {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+.begin-img_start {
+    width: auto;
+}
+
+.box-shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
